@@ -5,8 +5,9 @@
 <p align="center">Keep your Mac awake with the lid closed, without letting it overheat.</p>
 
 ClaudeAwake is a small menu bar app for MacBooks with Apple silicon. Close the lid and your Mac keeps
-running: long downloads, builds and other tasks carry on. Meanwhile ClaudeAwake watches the CPU temperature
-and the battery, and lets your Mac go to sleep normally if it gets too hot or the battery runs low.
+running: long downloads, builds and other tasks carry on. Meanwhile ClaudeAwake watches the CPU temperature.
+When it gets warm, ClaudeAwake turns on Low Power Mode, so your Mac cools down and keeps working instead of
+heating up in your bag. It still lets your Mac go to sleep normally if it gets too hot or the battery runs low.
 
 **[Download the beta](https://github.com/CaseReed/ClaudeAwake-releases/releases)** · macOS 26 or later ·
 Apple silicon · free during the beta
@@ -29,8 +30,11 @@ Apple silicon · free during the beta
 
 - **Lid closed mode.** Turn it on from the menu bar icon or with ⌥⌘A. Keep it on until you turn it off,
   or for 1, 2 or 4 hours.
-- **Safety sleep.** ClaudeAwake notifies you as the CPU warms up (85 °C by default). At your sleep threshold
-  (90 °C by default, 75 to 100 °C) it lets your Mac go to sleep. Your session is right where you left it.
+- **Cooling mode.** When the CPU warms up (85 °C by default), ClaudeAwake turns on Low Power Mode: your Mac
+  gives up some speed, runs much cooler and keeps working. Your own Low Power Mode setting comes back once the
+  Mac has cooled down, or when the session ends. You can turn it off in Settings › Safety › Cool down before sleeping.
+- **Safety sleep.** If the Mac still gets too hot, at your sleep threshold (90 °C by default, 75 to 100 °C)
+  ClaudeAwake lets it go to sleep. Your session is right where you left it.
 - **Battery floor.** On battery, it lets your Mac sleep when the charge falls to 15 % (10 to 25 %, or off).
 - **At a glance.** The temperature in the menu bar if you want it, and the display turns off when you close
   the lid.
@@ -40,14 +44,34 @@ Apple silicon · free during the beta
   <img src="assets/states-light.png" alt="The menu bar panel when lid closed mode is off, on, and when the Mac is warming up">
 </picture>
 
+### How much cooler
+
+Measured on a MacBook Pro with an M5 chip, on the charger, with all 10 cores fully loaded for 5 minutes:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cooling-chart-dark.png">
+  <img src="assets/cooling-chart-light.png" alt="CPU temperature under full load on a MacBook Pro M5: at full speed it climbs past the 85 °C warning and stays around 86.5 °C; in cooling mode it levels off around 61.5 °C, 25 °C cooler">
+</picture>
+
+| | Full speed | Cooling mode |
+|---|---|---|
+| CPU temperature (average) | 86.5 °C | 61.5 °C |
+| Hottest core | 98.8 °C | 65.5 °C |
+| Power drawn by the Mac | 38 W | 16 W |
+| Work done | 100 % | 73 % |
+
+Your Mac keeps about three quarters of its speed, about 25 °C cooler, at less than half the power.
+Results vary with the Mac and the load.
+
 ## How it stays safe
 
 Keeping a Mac awake with the lid closed needs a small system helper, which you approve once in
-System Settings. It does one thing: it disables sleep while the app keeps renewing a short lease of about
-90 seconds.
+System Settings. It only acts while the app keeps renewing a short lease of about 90 seconds: it disables
+sleep, and in cooling mode it turns on Low Power Mode, after saving your own setting.
 
-- If ClaudeAwake quits, crashes or freezes, the lease runs out and your Mac gets its normal sleep back.
-- Turning the mode off, or a safety sleep, gives it back right away.
+- If ClaudeAwake quits, crashes or freezes, the lease runs out and your Mac gets its normal sleep and your
+  Low Power Mode setting back.
+- Turning the mode off, or a safety sleep, gives them back right away.
 
 ## Privacy
 

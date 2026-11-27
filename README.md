@@ -52,9 +52,10 @@ mode stays off until you install a newer version.
 
 ## Feedback
 
-Tell the person who shared the beta with you what happened, when, and what you expected. To help, export
-the logs from Settings › General › Diagnostics › Export… and attach the zip. It holds the app's temperature
-and battery samples, its events, your settings and your Mac's model.
+Found a bug or have an idea? [Open an issue](https://github.com/CaseReed/ClaudeAwake-releases/issues/new/choose).
+Say what happened, when, and what you expected. The logs from Settings › General › Diagnostics › Export… help a
+lot: the zip holds the app's temperature and battery samples, its events, your settings and your Mac's model.
+Issues are public, so attach it only if you are fine with that.
 
 ## Uninstall
 

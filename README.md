@@ -1,6 +1,8 @@
-# ClaudeAwake
+<p align="center"><img src="assets/icon.png" width="128" height="128" alt=""></p>
 
-Keep your Mac awake with the lid closed, without letting it overheat.
+<h1 align="center">ClaudeAwake</h1>
+
+<p align="center">Keep your Mac awake with the lid closed, without letting it overheat.</p>
 
 ClaudeAwake is a small menu bar app for MacBooks with Apple silicon. Close the lid and your Mac keeps
 running: long downloads, builds and other tasks carry on. Meanwhile ClaudeAwake watches the CPU temperature

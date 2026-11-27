@@ -54,7 +54,7 @@ System Settings. It does one thing: it disables sleep while the app keeps renewi
 There is no account. ClaudeAwake makes two kinds of network requests:
 
 - **The daily update check**, which reads `appcast.xml` from this repository.
-- **Anonymous usage statistics** (from version 0.3.3), sent to [TelemetryDeck](https://telemetrydeck.com/faq/),
+- **Anonymous usage statistics** (from version 0.4.0), sent to [TelemetryDeck](https://telemetrydeck.com/faq/),
   a privacy-first analytics service hosted in the EU. They tell us how many Macs use ClaudeAwake and how
   lid-closed mode is used:
   - when the app is first installed, each time it starts, and once a day while it runs;

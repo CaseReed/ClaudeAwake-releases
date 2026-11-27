@@ -54,19 +54,20 @@ System Settings. It does one thing: it disables sleep while the app keeps renewi
 There is no account. ClaudeAwake makes two kinds of network requests:
 
 - **The daily update check**, which reads `appcast.xml` from this repository.
-- **Anonymous usage statistics** (from version 0.3.3), sent to [TelemetryDeck](https://telemetrydeck.com/privacy/),
+- **Anonymous usage statistics** (from version 0.3.3), sent to [TelemetryDeck](https://telemetrydeck.com/faq/),
   a privacy-first analytics service hosted in the EU. They tell us how many Macs use ClaudeAwake and how
-  lid-closed mode is used, and nothing else:
-  - when the app starts, and once a day while it runs;
+  lid-closed mode is used:
+  - when the app is first installed, each time it starts, and once a day while it runs;
   - when lid-closed mode starts (with the duration you chose) and ends (why it ended, and its length rounded,
     such as "1 to 2 hours");
   - when the system helper is allowed.
 
-  TelemetryDeck also receives the app and macOS versions, your Mac's model, and your language and region. Each Mac
-  is counted with a random identifier that comes from nothing on your Mac, is hashed before it leaves it, and is
-  replaced after 13 months. Never your name, files or temperatures, and TelemetryDeck does not store IP
-  addresses. Turn it off any time in Settings › General › Share anonymous usage statistics: nothing is sent
-  after that.
+  TelemetryDeck's library adds technical details to each of these: the app and macOS versions, your Mac's model
+  and architecture, screen size, appearance, a few accessibility settings, language, region, time zone, the day and
+  hour, and usage counters such as how many days and sessions the app was used and how long sessions last. Each
+  Mac is counted with a random identifier that comes from nothing on your Mac and is hashed before it leaves it.
+  Never your name, files or temperatures, and TelemetryDeck does not store IP addresses. Turn it off any time in
+  Settings › General › Share anonymous usage statistics: nothing new is recorded after that.
 
 Logs stay on your Mac until you export them and send them yourself.
 

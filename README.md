@@ -51,8 +51,24 @@ System Settings. It does one thing: it disables sleep while the app keeps renewi
 
 ## Privacy
 
-There is no account and no analytics. The only network request is the daily update check, which reads
-`appcast.xml` from this repository. Logs stay on your Mac until you export them and send them yourself.
+There is no account. ClaudeAwake makes two kinds of network requests:
+
+- **The daily update check**, which reads `appcast.xml` from this repository.
+- **Anonymous usage statistics** (from version 0.3.3), sent to [TelemetryDeck](https://telemetrydeck.com/privacy/),
+  a privacy-first analytics service hosted in the EU. They tell us how many Macs use ClaudeAwake and how
+  lid-closed mode is used, and nothing else:
+  - when the app starts, and once a day while it runs;
+  - when lid-closed mode starts (with the duration you chose) and ends (why it ended, and its length rounded,
+    such as "1 to 2 hours");
+  - when the system helper is allowed.
+
+  TelemetryDeck also receives the app and macOS versions, your Mac's model, and your language and region. Each Mac
+  is counted with a random identifier that comes from nothing on your Mac, is hashed before it leaves it, and is
+  replaced after 13 months. Never your name, files or temperatures, and TelemetryDeck does not store IP
+  addresses. Turn it off any time in Settings › General › Share anonymous usage statistics: nothing is sent
+  after that.
+
+Logs stay on your Mac until you export them and send them yourself.
 
 ## Updates and the end of the beta
 

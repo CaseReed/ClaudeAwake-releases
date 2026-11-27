@@ -1,0 +1,46 @@
+name: Bug report
+description: Something went wrong or did not behave as expected.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what happened, and when (the date and roughly the time help when reading the logs).
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: ClaudeAwake version
+      description: Shown in Settings › General, for example "Version 0.3.1 beta".
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac and macOS
+      description: For example "MacBook Pro M5, macOS 27.2".
+    validations:
+      required: true
+  - type: dropdown
+    id: power
+    attributes:
+      label: Power
+      options:
+        - Plugged in
+        - On battery
+        - Not sure
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics (optional)
+      description: >
+        Settings › General › Diagnostics › Export… saves a zip with the app's logs, your settings and your Mac's
+        model, and nothing else. Issues are public: attach it only if you are fine with that, or say you have it.

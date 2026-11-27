@@ -1,0 +1,11 @@
+name: Idea or other feedback
+description: Something you would like ClaudeAwake to do, or anything else to tell us.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your idea or feedback
+      description: What would help you, and in which situation.
+    validations:
+      required: true

@@ -11,6 +11,11 @@ and the battery, and lets your Mac go to sleep normally if it gets too hot or th
 **[Download the beta](https://github.com/CaseReed/ClaudeAwake-releases/releases)** · macOS 26 or later ·
 Apple silicon · free during the beta
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/screenshot-dark.png">
+  <img src="assets/screenshot-light.png" alt="The ClaudeAwake Safety settings and its menu bar panel, with lid closed mode on">
+</picture>
+
 ## Install
 
 1. Download the DMG from the [latest release](https://github.com/CaseReed/ClaudeAwake-releases/releases),
@@ -29,6 +34,11 @@ Apple silicon · free during the beta
 - **Battery floor.** On battery, it lets your Mac sleep when the charge falls to 15 % (10 to 25 %, or off).
 - **At a glance.** The temperature in the menu bar if you want it, and the display turns off when you close
   the lid.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/states-dark.png">
+  <img src="assets/states-light.png" alt="The menu bar panel when lid closed mode is off, on, and when the Mac is warming up">
+</picture>
 
 ## How it stays safe
 
@@ -52,7 +62,8 @@ mode stays off until you install a newer version.
 
 ## Feedback
 
-Found a bug or have an idea? [Open an issue](https://github.com/CaseReed/ClaudeAwake-releases/issues/new/choose).
+Found a bug? In the app, Settings › General › Feedback › Report a bug… opens the form with your app version and
+Mac model already filled in. For an idea, or if you are not at your Mac, [open an issue](https://github.com/CaseReed/ClaudeAwake-releases/issues/new/choose).
 Say what happened, when, and what you expected. The logs from Settings › General › Diagnostics › Export… help a
 lot: the zip holds the app's temperature and battery samples, its events, your settings and your Mac's model.
 Issues are public, so attach it only if you are fine with that.

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>ClaudeAwake</title>
+    <link>https://raw.githubusercontent.com/CaseReed/ClaudeAwake-releases/main/appcast.xml</link>
+    <language>en</language>
+    <!-- items: newest first, added by scripts/release.sh -->
+    <item>
+      <title>Version 0.3.0</title>
+      <pubDate>Fri, 27 Nov 2026 07:34:31 +0000</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://github.com/CaseReed/ClaudeAwake-releases/releases/tag/v0.3.0</sparkle:releaseNotesLink>
+      <enclosure url="https://github.com/CaseReed/ClaudeAwake-releases/releases/download/v0.3.0/ClaudeAwake-0.3.0.dmg" type="application/octet-stream" sparkle:edSignature="hbE6hgEfCA0ysud/+vP2KqxFxP3VtFBOiTL7zN3UoMxrav8uL+9OqI/990HfmS4yV2WiEm075L9psVm/K1cxAQ==" length="1575701"/>
+    </item>
+  </channel>
+</rss>

@@ -48,6 +48,11 @@ Apple silicon · free during the beta
 
 Measured on a MacBook Pro with an M5 chip, on the charger, with all 10 cores fully loaded for 5 minutes:
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cooling-chart-dark.png">
+  <img src="assets/cooling-chart-light.png" alt="CPU temperature under full load on a MacBook Pro M5: at full speed it climbs past the 85 °C warning and stays around 86.5 °C; in cooling mode it levels off around 61.5 °C, 25 °C cooler">
+</picture>
+
 | | Full speed | Cooling mode |
 |---|---|---|
 | CPU temperature (average) | 86.5 °C | 61.5 °C |

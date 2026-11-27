@@ -6,6 +6,15 @@
     <language>en</language>
     <!-- items: newest first, added by scripts/release.sh -->
     <item>
+      <title>Version 0.3.2</title>
+      <pubDate>Fri, 27 Nov 2026 08:44:51 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://github.com/CaseReed/ClaudeAwake-releases/releases/tag/v0.3.2</sparkle:releaseNotesLink>
+      <enclosure url="https://github.com/CaseReed/ClaudeAwake-releases/releases/download/v0.3.2/ClaudeAwake-0.3.2.dmg" type="application/octet-stream" sparkle:edSignature="kP/+MaEK32N9i6fNtRTHRDw+Lk51xgG2HlLJQ7b8gGparE+fDfAzuVT/lew5ePBw9ZWBBaKO2YjbMwYMu/WgBQ==" length="3559721"/>
+    </item>
+    <item>
       <title>Version 0.3.1</title>
       <pubDate>Fri, 27 Nov 2026 08:12:21 +0000</pubDate>
       <sparkle:version>6</sparkle:version>
